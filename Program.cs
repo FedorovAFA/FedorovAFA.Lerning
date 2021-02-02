@@ -7,6 +7,7 @@ namespace FedorovAFA.Lerning
 
         static void Main(string[] args)
         {
+            ConsoleClear();
             int  o = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("======================================");
             Console.WriteLine($"Введенное число : {o}") ;
