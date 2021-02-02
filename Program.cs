@@ -4,9 +4,11 @@ namespace FedorovAFA.Lerning
 {   
     public class Program
     {
+
         static void Main(string[] args)
         {
-            Console.Read();
+            int  o = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(o);
             ConsoleClear();
         }
         static void ConsoleClear()
