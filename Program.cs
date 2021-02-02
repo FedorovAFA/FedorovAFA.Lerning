@@ -6,7 +6,7 @@ namespace FedorovAFA.Lerning
     {
         static void Main(string[] args)
         {
-            
+            Console.Read();
             ConsoleClear();
         }
         static void ConsoleClear()
