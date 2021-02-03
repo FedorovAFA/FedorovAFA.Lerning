@@ -5,12 +5,13 @@ namespace FedorovAFA.Lerning
     public class Program
     {
 
-        static void Main(string[] args)
+        static void Main()
         {
             ConsoleClear();
-            int  o = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("======================================");
-            Console.WriteLine($"Введенное число : {o}") ;
+            int size = Convert.ToInt32(Console.ReadLine());
+            string production = Console.ReadLine();
+            string view = Console.ReadLine();
+            Sneakers ModelOne = new Sneakers(size, production, view);
             ConsoleClear();
         }
         static void ConsoleClear()
