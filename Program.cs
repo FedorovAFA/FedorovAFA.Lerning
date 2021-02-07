@@ -18,9 +18,9 @@ namespace FedorovAFA.Lerning
             Sneakers ModelOne = new Sneakers(42, "Китай", "Бега", 3434, "Boost");
             var sum = ListCheck + ModelOne;
             Console.WriteLine(sum);
-
-            Sneakers ModelTwo = new Sneakers(36, "Тайвань", "Деловые", 231, "Mister BIN");
-            sum += ModelTwo;
+            
+            Sneakers ModelTwo = new Sneakers(36, "Тайвань", "Деловые", 231, "Mister BIN");                        
+            sum = sum + ModelTwo;
             Console.WriteLine(sum);
             ConsoleClear();
         }
