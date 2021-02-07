@@ -6,17 +6,18 @@ namespace FedorovAFA.Lerning
     {
         public int Size { get; set; }
         public string Production { get; set; }
-        public decimal Price { get; set; }
-        public Footwear(int size, string production, decimal Price) 
+        public Footwear(int size, string production) 
         {
-            this.Price = Price;
+            if (string.IsNullOrWhiteSpace(production))
+            {
+                throw new ArgumentNullException(nameof(production));
+            }
             this.Size = size;
             this.Production = production;
-
         }
         public virtual void PrintSizeProduction() 
         {
-            Console.WriteLine($"Размер:{Size} \nПроизводитель: {Production} \nЦена:{Price}$");
+            Console.WriteLine($"Размер:{Size} \nПроизводитель: {Production}");
         }
 
     }
